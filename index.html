@@ -25,28 +25,33 @@
     </section>
 
     <div class="container">
-        <h1>add new user</h1>
-        <form action="#">
+        <div class="title">Add New User</div><br>
+        <form action="#" method="GET">
             <div class="userInfo">
                 <div class="inputBox">
                     <span class="info">Firstname</span>
-                    <input type="text" placeholder="Enter firstname" required>
+                    <input type="text" placeholder="firstname" required>
                 </div>
                 <div class="inputBox">
-                    <span class="info">Email address/span>
-                    <input type="text" placeholder="Enter email" required>
+                    <span class="info">Email address</span>
+                    <input type="text" placeholder="email" required>
                 </div>
                 <div class="inputBox">
                     <span class="info">Middlename</span>
-                    <input type="text" placeholder="Enter middlename" required>
+                    <input type="text" placeholder="middlename" required>
                 </div>
                 <div class="inputBox">
                     <span class="info">Type</span>
                     <input type="text" placeholder="Type of institution" required>
+                    {% comment %} <select name="schools" id="type">
+                        <option value="jhs">JHS</option>
+                        <option value="shs">SHS</option>
+                        <option value="uni">Tertiary</option>
+                    </select> {% endcomment %}
                 </div>
                 <div class="inputBox">
                     <span class="info">Lastname</span>
-                    <input type="text" placeholder="Enter lastname" required>
+                    <input type="text" placeholder="lastname" required>
                 </div>
                 <div class="inputBox">
                     <span class="info">Date of birth</span>
@@ -54,12 +59,15 @@
                 </div>
                 <div class="inputBox">
                     <span class="info">Username</span>
-                    <input type="text" placeholder="Enter username" required>
+                    <input type="text" placeholder="username" required>
                 </div>
                 <div class="inputBox">
                     <span class="info">Role</span>
+                    <input type="text" placeholder="role" required>
                 </div>
-                <input type="text" placeholder="role" required>
+                <div class="button">
+                    <input type="submit" value="Register">
+                </div>
             </div>
         </form>
     </div>
