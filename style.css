@@ -1,11 +1,17 @@
 body
 {
     padding: auto;
-    margin: 20px;
+    margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
     justify-content: center;
     align-items: center;
+}
+
+header
+{
+    height: 40px;
+    padding-top: 10px;
 }
 
 .searchBox 
@@ -46,7 +52,7 @@ body
 
 .searchBox i
 {
-    color: rgb(190, 190, 190);
+    color: rgb(226, 226, 226);
 }
 
 ::placeholder
@@ -67,10 +73,11 @@ body
 
 .imageProfile1 img
 {
-    height: 100px;
-    width: 98px;
+    height: 90px;
+    width: 90px;
     margin-top: 13%;
     margin-left: 5%;
+    background: rgb(27, 25, 25);
     border: none;
     border-radius: 200px;
     position: relative;
@@ -86,7 +93,7 @@ body
     border-radius: 200px;
     outline: none;
     bottom: 50px;
-    left: 138px;
+    left: 130px;
 }
 
 .imageProfile1 button
@@ -103,7 +110,7 @@ body
 
 button:hover
 {
-    background-color: rgb(180, 180, 180);
+    background-color: rgb(194, 194, 194);
     transition: .3s;
     cursor: pointer;
 }
@@ -114,15 +121,14 @@ button:hover
     width: 100%;
     background: #fff;
     padding: 25px 30px;
-    margin-left: 28%;
+    margin-left: 25%;
     margin-top: 35px;
 }
 
 .container .title
 {
-    font-size: 15px;
-    color: rgb(43, 152, 255);
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 550;
     position: relative;
 }
 
@@ -169,12 +175,13 @@ form .userInfo .inputBox .info
     border-top: none;
     border-left: none;
     border-right: none;
+    border-width: 1px;
     color: #aaa;
 }
 
 .userInfo .inputBox input:focus, .userInfo .inputBox input:valid
 {
-    border: #aaa;
+    color: black;
 }
 
 form .button
@@ -186,7 +193,7 @@ form .button
 form .button input
 {
     height: 100%;
-    width: 250px;
+    width: 500%;
     outline: none;
     color-adjust: rgb(189, 189, 189);
     color: deepskyblue;
@@ -195,13 +202,21 @@ form .button input
     font-weight: 500;
     letter-spacing: 1px;
     border-radius: 10px;
-    margin-left: 90%;
+    margin-left: 130%;
 }
 
 form .button input:hover
 {
     background:rgb(207, 207, 207);
     cursor: pointer;
+}
+
+footer
+{
+    padding-left: 47%;
+    padding-top: 10px;
+    background-color: rgb(230, 230, 230);
+    height: 30px;
 }
 
 @media (max-width: 584px)
@@ -257,6 +272,10 @@ form .button input:hover
         max-height: 100%;
     }
 
-    
+    .searchBox, .imageProfile, .imageProfile1 button
+    {
+        max-width: 100%;
+        max-height: 100%;
+    }
 
 }
