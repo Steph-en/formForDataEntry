@@ -165,6 +165,16 @@ form .userInfo .inputBox .info
     font-size: 13px;
 }
 
+/* form .userInfo .inputBox.success input
+{
+    border-color: #2ecc71;
+}
+
+form .userInfo .inputBox.success input
+{
+    border-color: #e74c3c;
+} */
+
 .userInfo .inputBox input
 {
     outline: none;
