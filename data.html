@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
     <meta name="author" content="Appah Stephen">
-    <link rel="stylesheet" href="/asset/css/style1.css">
+    <link rel="stylesheet" href="./asset/css/style1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>User Data Page</title>
 </head>
@@ -20,10 +20,17 @@
         </div>
     </header>
 
+    <div class="addInst">
+        <button id="icon"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+        <button id="icon"><i class="fa fa-archive" aria-hidden="true"></i></button>
+        <button id="icon"><i class="fa fa-cog" aria-hidden="true"></i></button>
+        <button class="addIn"><b>Add Institution</b></button>
+    </div>
+
     <aside id="sidebar">
         <div class="title"><a href="index.html">alumnhub</a></div>
         <div class="imageProfile1">
-            <img src="user.png" alt="">
+            <img src="./asset/images/user.png">
             <span>Super Adminstrator<br><span>s.admin@alumnhub.com</span></span>
         </div>
 
@@ -36,10 +43,13 @@
                 <li><a href="plans.html"><i class="fa fa-bars"></i>Plans</a></li>
                 <li><a href="payment.html"><i class="fa fa-list-alt"></i>Payments</a></li>
                 <hr>
-                <li><a href="settings.html"><i class="fa fa-cog"></i>Settings</a></li><br>
+                <li><a href="settings.html"><i class="fa fa-cog"></i>Settings</a></li>
+                <li id="toggle"><b><i class="fas fa-list"></i>Toggle sidebar</b></li>
             </ul>
         </div>
     </aside>
+
+    
 
     <div class="infoBox">
         <table class="dataTable" cellpadding= "0" cellspscing="0" id="dataTable" width= "100%">
@@ -70,6 +80,6 @@
     </div>
 
     <footer>&copy alumnhub 2021</footer>
-    <script src="script.js"></script>
+    <script src="./asset/javascript/script.js"></script>
 </body>
 </html>
